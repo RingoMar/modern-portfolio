@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="shortcut icon" type="image/jpg" href="logo.jpg" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("a[href*=#]:not([href=#])").click(function () {
+        if (
+          location.pathname.replace(/^\//, "") ==
+          this.pathname.replace(/^\//, "") &&
+          location.hostname == this.hostname
+        ) {
+          var target = $(this.hash);
+          target = target.length
+            ? target
+            : $("[name=" + this.hash.slice(1) + "]");
+          if (target.length) {
+            $("html,body").animate(
+              {
+                scrollTop: target.offset().top,
+              },
+              1000
+            );
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+  <title>Ringo Mar</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light yell px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand momcake" href="#">Rin Folio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active momcake" aria-current="page" href="#one">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link momcake" href="#two"> ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link momcake" href="#three">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link momcake" href="#four" tabindex="-1" aria-disabled="true">MSC</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="one">
+    <h1 class="blc nameLogo" style="font-size: 8vw">RINGOMAR</h1>
+    <div class="line"></div>
+    <div class="d-flex col megapad justify-content-end">
+      <div class="Lleft"></div>
+    </div>
+  </section>
+  <section id="two">
+    <div class="d-flex justify-content-end">
+      <div class="d-inline plus"></div>
+    </div>
+    <h1 class="wih nameLogo" style="font-size: 8vw"><del>ABOUT</del></h1>
+    <div class="aboutmeBox">
+      <p class="sasnsa aboutData">
+        RingoMar a hobbyist and Student studying computer science. Thats about
+        it.
+      </p>
+      <img src="./thumbnail/ringoMar.png" alt="ringo" style="background: #ffff00" class="rounded" />
+    </div>
+  </section>
+  <section id="three">
+    <h1 class="blc nameLogo" style="font-size: 8vw">PROJECTS</h1>
+    <div class="d-flex projectsData">
+      <div class="card-group">
+        <div class="card zoom text-white bg-dark mb-3 col mx-1 rounded">
+          <img src="./thumbnail/rinbot.jpg" data-src="./thumbnail/rinbot.jpg" class="lazy-image card-img-top"
+            alt="..." />
+          <div class="card-header">Rin Bot</div>
+          <div class="card-body">
+            <p class="card-text">
+              Rin Bot is a Twitch / Discord IRC bot that is used to enhance
+              the chatting experience. Written in Typescript / Python.
+
+              <!-- <img src="./thumbnail/rinbotColorSmall.png" alt="ringo"/> -->
+            </p>
+          </div>
+        </div>
+
+        <div class="card zoom text-white bg-dark mb-3 col mx-1 rounded">
+          <img src="./thumbnail/rinNames.jpg" data-src="./thumbnail/rinNames.jpg" class="lazy-image card-img-top"
+            alt="..." />
+          <div class="card-header">Rin Names</div>
+          <div class="card-body">
+            <p class="card-text">
+              A algorithm used to fragment a username to guess the most likely
+              accepted shortened form.
+              <a href="https://github.com/RingoMar/rinNames">VIEW CODE</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="card zoom text-white bg-dark mb-3 col mx-1 rounded">
+          <img src="./thumbnail/Yume.jpg" data-src="./thumbnail/Yume.jpg" class="lazy-image card-img-top" alt="..." />
+          <div class="card-header">Yume</div>
+          <div class="card-body">
+            <p class="card-text">
+              Yume is a research project to make a object detection algorithm.
+              Currently written in Python, research with C++ also on the
+              table.
+              <a href="https://twitter.com/_RingoMar/status/1428172472659103745?s=20">More Info</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex col justify-content-between" style="padding-top: 70px">
+      <div class="rightOb"></div>
+      <div class="rightOb_under"></div>
+    </div>
+  </section>
+  <section id="four">
+    <div class="d-flex justify-content-end">
+      <div class="d-inline plus"></div>
+    </div>
+    <h1 class="wih nameLogo" style="font-size: 8vw">
+      <span style="text-decoration: underline; text-decoration-color: #ffff00">Miscellaneous</span>
+    </h1>
+    <div class="aboutmeBox">
+      <div class="list-group">
+        <a href="twitter.com/_ringomar" class="list-group-item m-2 scanfcode card1 list-group-item-action"
+          aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Twitter</h5>
+          </div>
+          <p class="mb-1">
+            I tweet the most random stuff dont follow me but do feel free to
+            DM me.
+          </p>
+          <small>Sometimes I tweet about projects</small>
+        </a>
+        <a href="https://github.com/RingoMar" class="list-group-item m-2 scanfcode card2 list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">My Github page</h5>
+          </div>
+          <p class="mb-1">Where I post all the code for my projects</p>
+          <small class="text-muted">Checkout stars for more cool projects</small>
+        </a>
+        <a href="https://codestats.net/users/ringo" class="list-group-item card1 scanfcode m-2 list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Code Stats</h5>
+          </div>
+          <p class="mb-1">View all the things I code how much I code etc</p>
+          <small class="text-muted">😮</small>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="five">Page 5</section> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="./scripts.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
